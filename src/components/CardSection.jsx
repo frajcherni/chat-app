@@ -3,16 +3,16 @@ import { AiOutlineCheck, AiOutlineShoppingCart, AiOutlineMail, AiOutlineCustomer
 
 const Card = ({ title, points, Icon }) => {
   return (
-    <div className="max-w-md rounded-lg overflow-hidden shadow-lg bg-white m-6 transition-transform transform hover:scale-105 hover:shadow-xl">
+    <div className="max-w-sm rounded-lg overflow-hidden shadow-md bg-white m-4 transition-transform transform hover:scale-105 hover:shadow-lg border-2 border-indigo-600 ">
       <div className="flex justify-center py-4">
-        <Icon className="text-4xl text-indigo-600" />
+        <Icon className="text-3xl text-indigo-600" />
       </div>
-      <div className="px-8 py-6">
-        <div className="font-bold text-2xl mb-4 text-center">{title}</div>
-        <ul className="text-gray-700 text-lg">
+      <div className="px-6 py-4">
+        <div className="font-bold text-xl mb-3 text-center">{title}</div>
+        <ul className="text-gray-700 text-base">
           {points.map((point, idx) => (
-            <li key={idx} className="flex items-center mb-3">
-              <AiOutlineCheck className="text-green-500 mr-3" />
+            <li key={idx} className="flex items-center mb-2">
+              <AiOutlineCheck className="text-indigo-600 mr-2 font-bold text-2xl" />
               {point}
             </li>
           ))}
@@ -62,16 +62,16 @@ const CardSection = () => {
   ];
 
   return (
-    <section className="min-h-screen flex flex-col items-center py-12 mt-32">
+    <section className="min-h-screen flex flex-col items-center py-12 sm:py-16 mt-8 sm:mt-16">
       <div className="text-center mb-12 max-w-3xl">
-        <h2 className="mb-4 text-6xl tracking-tight font-extrabold">
+        <h2 className="mb-4 text-3xl sm:text-4xl lg:text-4xl tracking-tight font-extrabold">
           <span className="text-gray-900 dark:text-black">Cover all customer journey touchpoints</span> <span className="text-indigo-600 dark:text-indigo-600">automatically</span>
         </h2>
-        <p className="mb-8 font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
+        <p className="mb-8 font-light text-gray-500 lg:mb-12 sm:text-lg dark:text-gray-400">
           Now your customer relations can focus on optimization, scale up through automation, and manage top-tier clients.
         </p>
       </div>
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center ">
         {cardsData.map((card, idx) => (
           <Card key={idx} title={card.title} points={card.points} Icon={card.Icon} />
         ))}

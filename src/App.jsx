@@ -2,24 +2,34 @@ import React from 'react';
 import HeroSection from './components/HeroSection';
 import TestimonialsList from './components/TestimonialsList';
 import CardSection from './components/CardSection';
-import Testimonial  from './components/Testimonial';
+import Testimonial from './components/Testimonial';
+import UseCaseEntreprise from './components/UseCaseEntreprise';
+import Businesses from './components/Businesses';
+import AutomationSection from './components/Automation';
+import Section3 from './components/section3';
+import Features from './components/Features';
+import Section4 from './components/Section4';
 const App = () => {
   return (
-    <div 
-      style={{ 
-        background: 'linear-gradient(143.6deg, rgba(192, 132, 252, 0) 20.79%, rgba(232, 121, 249, 0.26) 40.92%, rgba(204, 171, 238, 0) 70.35%)', 
-        minHeight: '1200', 
-      }}
-    >
+    <div className=" min-h-screen w-full">
+      
       <HeroSection />
+      <AutomationSection />
+
       <TestimonialsList />
       <CardSection />
-      <Testimonial />
 
+
+      <Section3 />
+      <Section4 />
+      <UseCaseEntreprise />
+      <Testimonial />
+      
+      <Features />
+      <Businesses />
+  
     </div>
   );
 };
 
 export default App;
-
-
