@@ -8,7 +8,7 @@ const Section4 = () => {
         {/* Video content */}
         <div className="w-full md:w-1/2 flex justify-center md:justify-start mt-8 md:mt-0">
           <video className="w-full max-w-md h-auto" autoPlay loop muted>
-            <source src="src/assets/vid2.webm" type="video/mp4" />
+            <source src={`${import.meta.env.BASE_URL}images/vid2.webm`} type="video/mp4" />
           </video>
         </div>
         

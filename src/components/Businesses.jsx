@@ -35,7 +35,7 @@ export default function Businesses() {
             </div>
           </div>
           <div className="flex justify-center">
-            <img className="h-full w-full md:h-auto md:w-auto max-w-full max-h-full" src="src/assets/img.png" alt="Live Chat"/>
+            <img className="h-full w-full md:h-auto md:w-auto max-w-full max-h-full" src={`${import.meta.env.BASE_URL}images/img.png`} alt="Live Chat"/>
           </div>
         </div>
         <div className="text-center mb-4">

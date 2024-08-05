@@ -21,7 +21,7 @@ export default function Testimonial() {
             </h2>
             <img
               className="w-full sm:w-2/3 h-auto rounded-lg object-cover mt-16 sm:mt-24"
-              src="src/assets/bis.png" // replace with your image path
+              src={`${import.meta.env.BASE_URL}images/bis.png`} 
               alt="AI Chatbot"
             />
           </div>

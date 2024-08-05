@@ -3,9 +3,9 @@ import { FaCheckCircle } from 'react-icons/fa';
 export default function AutomationSection() {
   return (
     <section 
-      className="py-8 px-4 lg:py-16 lg:px-6 relative mt-8 bg-purple-200 "  
+      className="py-8 px-4 lg:py-16 lg:px-6 relative mt-8 bg-purple-100 "  
     >
-      {/* Centered Title */}
+      {/*  Title */}
       <div className="text-center mb-12">
         <h2 className="text-3xl sm:text-4xl lg:text-4xl font-extrabold tracking-tight">
           <span className="text-gray-900 dark:text-black">
@@ -18,7 +18,7 @@ export default function AutomationSection() {
         {/* Image on the Left */}
         <div className="flex-1 lg:pr-8 mb-8 lg:mb-0 flex justify-center">
         <img 
-  src="src/assets/14.png" 
+  src={`${import.meta.env.BASE_URL}images/14.png`} 
   alt="Automation" 
   className="h-72 w-auto max-w-full rounded-lg sm:h-72 md:h-80 lg:h-96"
 />

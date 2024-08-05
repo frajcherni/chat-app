@@ -162,9 +162,9 @@ export default function HeroSection() {
   <div className="mt-24 mx-auto max-w-7xl px-6 lg:px-8">
     <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
       
-      {/* Mobile View: Image First, then Text and Buttons */}
+      {/* Mobile View */}
       <div className="flex flex-col items-center lg:hidden">
-        <img src="src/assets/img.webp" alt="Your Image Description" className="rounded-lg mb-6" />
+        <img src={`${import.meta.env.BASE_URL}images/img.webp`} alt="Your Image Description" className="rounded-lg mb-6" />
         <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl text-center">
           Win up to <span className="text-indigo-600 dark:text-indigo-600">70%</span> of your team’s time back with AI Chatbot
         </h1>
@@ -181,7 +181,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Desktop View: Text First, then Image */}
+      {/* Desktop View */}
       <div className="hidden lg:flex lg:flex-col lg:items-start lg:text-left">
         <h1 className="mt-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
           Win up to <span className="text-indigo-600 dark:text-indigo-600">70%</span> of your team’s time back with AI Chatbot
@@ -199,9 +199,9 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Desktop View: Image on the Right */}
+      {/* Desktop View */}
       <div className="hidden lg:flex lg:justify-center lg:mt-10">
-        <img src="src/assets/img.webp" alt="Your Image Description" className="rounded-lg" />
+        <img src={`${import.meta.env.BASE_URL}images/img.webp`} alt="Your Image Description" className="rounded-lg" />
       </div>
       
     </div>

@@ -1,4 +1,4 @@
-import { FaCommentDots } from 'react-icons/fa'; // Modern chat-like icon
+import { FaCommentDots } from 'react-icons/fa';
 
 const TestimonialsList = () => {
   return (
@@ -19,7 +19,7 @@ const TestimonialsList = () => {
           {/* Left Card */}
           <div className="w-full md:w-1/3 flex flex-col">
             <div className="flex-1 flex flex-col text-center rounded-lg shadow-lg bg-gray-100">
-              <img className="w-full h-64 object-cover rounded-t-lg" src="src/assets/img1.png" alt="Standalone AI" />
+              <img className="w-full h-64 object-cover rounded-t-lg" src={`${import.meta.env.BASE_URL}images/img1.png`} alt="Standalone AI" />
               <div className="p-4 sm:p-8 flex-1 flex flex-col justify-between">
                 <h2 className="mb-4 text-2xl sm:text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-black">Standalone AI</h2>
                 <p className="text-gray-500 text-sm sm:text-base">No dependencies on third-party providers like OpenAI, Google Bard, or Bing AI.</p>
@@ -29,7 +29,7 @@ const TestimonialsList = () => {
           {/* Right Card */}
           <div className="w-full md:w-2/3 flex flex-col">
             <div className="flex-1 flex flex-col bg-gray-100 text-center rounded-lg shadow-lg">
-              <img className="w-full h-64 object-cover rounded-t-lg" src="src/assets/img2.png" alt="The right answers in a flash" />
+              <img className="w-full h-64 object-cover rounded-t-lg" src={`${import.meta.env.BASE_URL}images/img2.png`} alt="The right answers in a flash" />
               <div className="p-4 sm:p-8 flex-1 flex flex-col justify-between">
                 <h2 className="mb-4 text-2xl sm:text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-black">The right answers in a flash</h2>
                 <p className="text-gray-500 text-sm sm:text-base">A seamless integration of state-of-the-art AI technologies.</p>

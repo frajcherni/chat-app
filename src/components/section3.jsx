@@ -25,7 +25,7 @@ const Section3 = () => {
         </div>
         <div className="w-full md:w-1/2 flex justify-center md:justify-end mt-8 md:mt-0">
           <video className="w-full max-w-md h-auto" autoPlay loop muted>
-            <source src="src/assets/vid1.webm" type="video/mp4" />
+            <source src={`${import.meta.env.BASE_URL}images/vid1.webm`} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>

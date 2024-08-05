@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
-import './animations.css'; // Ensure you have the necessary CSS for animations
+import './animations.css'; 
 
 export default function UseCaseEntreprise() {
   const [dropdownOpen, setDropdownOpen] = useState([true, false, false]);
@@ -29,19 +29,19 @@ export default function UseCaseEntreprise() {
   const cases = [
     {
       title: "When you need a human touch",
-      image: "src/assets/img6.png",
+      image: `${import.meta.env.BASE_URL}images/img6.png`,
       description:
         "No more wading through dense documents to find a single piece of information. Our AI chatbots sift through taxpayer data, promptly addressing refund statuses, deductible queries, and much more.",
     },
     {
       title: "Never miss a date with Us",
-      image: "src/assets/img7.png",
+      image: `${import.meta.env.BASE_URL}images/img7.png`,
       description:
         "Sometimes, AI can't replace the assurance a human voice provides, especially when audits loom large. In such cases, Tars ensures a smooth handover to agents who can provide that personalized guidance every taxpayer seeks.",
     },
     {
       title: "Making the tax conversation easy",
-      image: "src/assets/education-1-min.png",
+      image: `${import.meta.env.BASE_URL}images/education-1-min.png`,
       description:
         "In the bustle of life, it's easy to forget deadlines. But with Tars on your side, taxpayers receive timely reminders and insightful tips, ensuring they stay on top of their tax game, straight on their preferred channels.",
     },
@@ -55,7 +55,7 @@ export default function UseCaseEntreprise() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="mb-4 sm:mb-6 md:mb-8 text-3xl sm:text-4xl lg:text-5xl font-extrabold">
+          <h2 className="mb-4 sm:mb-6 md:mb-8 text-3xl sm:text-4xl lg:text-4xl font-extrabold">
             <span className="text-gray-900 dark:text-black">
               Enterprise <span className="text-indigo-600 dark:text-indigo-600">Use Case</span> Templates
             </span>
