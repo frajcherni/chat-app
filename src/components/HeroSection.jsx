@@ -9,7 +9,6 @@ import {
   Popover,
   PopoverButton,
   PopoverGroup,
-  PopoverPanel,
 } from '@headlessui/react';
 import {
   ArrowPathIcon,
@@ -42,156 +41,185 @@ export default function HeroSection() {
     <div className="relative">
       <div className="absolute inset-0 blur-xl h-[580px]" />
       <div className="relative">
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white ">
-        <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
-          <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              LOGO
-            </a>
-          </div>
-          <div className="flex lg:hidden">
-            <button
-              type="button"
-              onClick={() => setMobileMenuOpen(true)}
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-            >
-              <span className="sr-only">Open main menu</span>
-              <Bars3Icon aria-hidden="true" className="h-6 w-6" />
-            </button>
-          </div>
-          <Popover.Group className="hidden lg:flex lg:gap-x-12">
-            <Popover className="relative">
-              <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-                Product
-                <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none text-gray-400" />
-              </Popover.Button>
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 transition">
-                <div className="p-4">
-                  {products.map((product) => (
-                    <a key={product.name} href={product.href} className="flex items-center gap-x-2 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-50">
-                      <product.icon className="h-6 w-6 text-gray-400" aria-hidden="true" />
-                      {product.name}
-                    </a>
-                  ))}
-                </div>
-                <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
-                  {callsToAction.map((action) => (
-                    <a key={action.name} href={action.href} className="flex items-center gap-x-2 p-4 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-50">
-                      <action.icon className="h-6 w-6 text-gray-400" aria-hidden="true" />
-                      {action.name}
-                    </a>
-                  ))}
-                </div>
-              </Popover.Panel>
-            </Popover>
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white">
+  <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+    <div className="flex lg:flex-1">
+      <a href="#" className="-m-1.5 p-1.5">
+        <span className="sr-only">Your Company</span>
+        <svg
+          className="h-8 w-8 text-indigo-600"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            d="M11 1a10 10 0 00-10 10c0 4.5 2.4 8.4 5.9 10.3-.2-.8-.3-1.7-.3-2.6v-2.7a7.6 7.6 0 01-3.6-1V16c0-1.7.7-3.3 1.8-4.4v-.1c-1.5-.7-2.6-2.2-2.6-4.1 0-2.4 1.9-4.4 4.3-4.4s4.3 2 4.3 4.4c0 1.9-1.1 3.4-2.6 4.1v.1c1.1 1.1 1.8 2.7 1.8 4.4v1.3c-.7.4-1.5.7-2.3.9V18c0 .9-.1 1.8-.3 2.6C18.6 19.4 21 15.5 21 11a10 10 0 00-10-10zM12 4a3.5 3.5 0 00-3.5 3.5c0 1.5.9 2.8 2.2 3.3l.8.3.8-.3c1.3-.5 2.2-1.8 2.2-3.3A3.5 3.5 0 0012 4zm-1.7 7.8l-1.6-.8c-.4-.2-.6-.7-.6-1.1s.2-.9.6-1.1l1.6-.8c.4-.2.9-.2 1.3 0l1.6.8c.4.2.6.7.6 1.1s-.2.9-.6 1.1l-1.6.8c-.4.2-.9.2-1.3 0z"
+          />
+        </svg>
+      </a>
+    </div>
+    <div className="flex lg:hidden">
+      <button
+        type="button"
+        onClick={() => setMobileMenuOpen(true)}
+        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+      >
+        <span className="sr-only">Open main menu</span>
+        <Bars3Icon aria-hidden="true" className="h-6 w-6" />
+      </button>
+    </div>
+    <Popover.Group className="hidden lg:flex lg:gap-x-12">
+      <Popover className="relative">
+        <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+          Product
+          <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none text-gray-400" />
+        </Popover.Button>
+        <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 transition">
+          <div className="p-4">
             {products.map((product) => (
-              <a key={product.name} href={product.href} className="text-sm font-semibold leading-6 text-gray-900">{product.name}</a>
-            ))}
-          </Popover.Group>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <button className="w-1/2 sm:w-32 py-2.5 rounded font-semibold text-md bg-indigo-600 text-white border-2 border-indigo-600">
-        Get started
-    </button>
-    <button className="w-1/2 mt-4 sm:mt-0 sm:ml-4 sm:w-32 py-2.5 rounded font-semibold text-md bg-white text-indigo-600 border-2 border-indigo-600">
-Try Free    </button>
-          </div>
-        </nav>
-        <Dialog open={mobileMenuOpen} onClose={() => setMobileMenuOpen(false)} className="lg:hidden">
-          <div className="fixed inset-0 z-10" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-            <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
-                LOGO
+              <a key={product.name} href={product.href} className="flex items-center gap-x-2 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-50">
+                <product.icon className="h-6 w-6 text-gray-400" aria-hidden="true" />
+                {product.name}
               </a>
-              <button
-                type="button"
-                onClick={() => setMobileMenuOpen(false)}
-                className="-m-2.5 rounded-md p-2.5 text-gray-700"
-              >
-                <span className="sr-only">Close menu</span>
-                <XMarkIcon aria-hidden="true" className="h-6 w-6" />
-              </button>
-            </div>
-            <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-gray-500/10">
-                <div className="space-y-2 py-6">
-                  <Disclosure as="div" className="-mx-3">
-                    <Disclosure.Button className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                      Product
-                      <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
-                    </Disclosure.Button>
-                    <Disclosure.Panel className="mt-2 space-y-2">
-                      {products.map((product) => (
-                        <a key={product.name} href={product.href} className="block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                          {product.name}
-                        </a>
-                      ))}
-                    </Disclosure.Panel>
-                  </Disclosure>
-                  {products.map((product) => (
-                    <a key={product.name} href={product.href} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                      {product.name}
-                    </a>
-                  ))}
-                </div>
-                <div className="py-6">
-                  <a href="#" className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-50">
-                    Log in
-                  </a>
-                  <a href="#" className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-50">
-                    Sign up
-                  </a>
-                </div>
-              </div>
-            </div>
-          </Dialog.Panel>
-        </Dialog>
-      </header>
-        <div className="sm:py-32 lg:pb-40">
-          <div className="mt-24 mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto max-w-2xl lg:max-w-none lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
-              <div className="text-center lg:text-left">
-                <div className="flex items-center justify-center lg:justify-start gap-x-4">
-              
-                </div>
-                <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"> Win up to 70% of your team’s time back with AI Chatbot</h1>
-                <p className="mt-6 text-lg leading-8 text-gray-600">
-                ChatBot scans your website, help center, or other designated resource to provide quick and accurate AI-generated answers to customer questions.
-                </p>
-                <div className="mt-10 flex items-center justify-center lg:justify-start gap-x-3">
-    <button className="w-1/2 sm:w-32 py-2.5 rounded font-semibold text-md bg-indigo-600 text-white border-2 border-indigo-600">
-        Get started
-    </button>
-    <button className="w-1/2 mt-4 sm:mt-0 sm:ml-4 sm:w-32 py-2.5 rounded font-semibold text-md bg-white text-indigo-600 border-2 border-indigo-600">
-        Watch a Demo
-    </button>
-</div>
-
-
-              </div>
-              <div className="mt-10 lg:mt-0 flex justify-center lg:justify-end">
-                <img src="src/assets/img.webp" alt="Your Image Description" className="rounded-lg" />
-              </div>
-            </div>
+            ))}
           </div>
-          <div
-            className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+          <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+            {callsToAction.map((action) => (
+              <a key={action.name} href={action.href} className="flex items-center gap-x-2 p-4 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-50">
+                <action.icon className="h-6 w-6 text-gray-400" aria-hidden="true" />
+                {action.name}
+              </a>
+            ))}
+          </div>
+        </Popover.Panel>
+      </Popover>
+      {products.map((product) => (
+        <a key={product.name} href={product.href} className="text-sm font-semibold leading-6 text-gray-900">{product.name}</a>
+      ))}
+    </Popover.Group>
+    <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+      <button className="w-1/2 sm:w-32 py-2.5 rounded font-semibold text-md bg-indigo-600 text-white border-2 border-indigo-600">
+        Get started
+      </button>
+      <button className="w-1/2 mt-4 sm:mt-0 sm:ml-4 sm:w-32 py-2.5 rounded font-semibold text-md bg-white text-indigo-600 border-2 border-indigo-600">
+        Try Free
+      </button>
+    </div>
+  </nav>
+  <Dialog open={mobileMenuOpen} onClose={() => setMobileMenuOpen(false)} className="lg:hidden">
+    <div className="fixed inset-0 z-10" />
+    <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+      <div className="flex items-center justify-between">
+        <a href="#" className="-m-1.5 p-1.5">
+          <span className="sr-only">Your Company</span>
+          <svg
+            className="h-8 w-8 text-indigo-600"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
             aria-hidden="true"
           >
-            <div
-              className=""
-           
+            <path
+              d="M11 1a10 10 0 00-10 10c0 4.5 2.4 8.4 5.9 10.3-.2-.8-.3-1.7-.3-2.6v-2.7a7.6 7.6 0 01-3.6-1V16c0-1.7.7-3.3 1.8-4.4v-.1c-1.5-.7-2.6-2.2-2.6-4.1 0-2.4 1.9-4.4 4.3-4.4s4.3 2 4.3 4.4c0 1.9-1.1 3.4-2.6 4.1v.1c1.1 1.1 1.8 2.7 1.8 4.4v1.3c-.7.4-1.5.7-2.3.9V18c0 .9-.1 1.8-.3 2.6C18.6 19.4 21 15.5 21 11a10 10 0 00-10-10zM12 4a3.5 3.5 0 00-3.5 3.5c0 1.5.9 2.8 2.2 3.3l.8.3.8-.3c1.3-.5 2.2-1.8 2.2-3.3A3.5 3.5 0 0012 4zm-1.7 7.8l-1.6-.8c-.4-.2-.6-.7-.6-1.1s.2-.9.6-1.1l1.6-.8c.4-.2.9-.2 1.3 0l1.6.8c.4.2.6.7.6 1.1s-.2.9-.6 1.1l-1.6.8c-.4.2-.9.2-1.3 0z"
             />
+          </svg>
+        </a>
+        <button
+          type="button"
+          onClick={() => setMobileMenuOpen(false)}
+          className="-m-2.5 rounded-md p-2.5 text-gray-700"
+        >
+          <span className="sr-only">Close menu</span>
+          <XMarkIcon aria-hidden="true" className="h-6 w-6" />
+        </button>
+      </div>
+      <div className="mt-6 flow-root">
+        <div className="-my-6 divide-y divide-gray-900/10">
+          <div className="py-6">
+            <a href="#" className="-mx-3 block rounded-lg py-1.5 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-100">
+              Product
+              <span className="text-gray-400" aria-hidden="true">
+                <ChevronDownIcon className="h-5 w-5 flex-none" />
+              </span>
+            </a>
           </div>
+          {products.map((product) => (
+            <div key={product.name} className="py-6">
+              <a href={product.href} className="-mx-3 block rounded-lg py-1.5 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-100">
+                {product.name}
+              </a>
+            </div>
+          ))}
         </div>
       </div>
-      <div className="fixed bottom-5 right-5">
-         <button className="bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-500 focus:outline-none">
-          <IoChatbubblesSharp className="h-10 w-10" />
-         </button>
+    </Dialog.Panel>
+  </Dialog>
+</header>
+
+
+<div className="sm:py-32 lg:pb-40">
+  <div className="mt-24 mx-auto max-w-7xl px-6 lg:px-8">
+    <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+      
+      {/* Mobile View: Image First, then Text and Buttons */}
+      <div className="flex flex-col items-center lg:hidden">
+        <img src="src/assets/img.webp" alt="Your Image Description" className="rounded-lg mb-6" />
+        <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl text-center">
+          Win up to <span className="text-indigo-600 dark:text-indigo-600">70%</span> of your team’s time back with AI Chatbot
+        </h1>
+        <p className="mt-6 text-lg leading-8 text-gray-600 text-center">
+          ChatBot scans your website, help center, or other designated resource to provide quick and accurate AI-generated answers to customer questions.
+        </p>
+        <div className="mt-10 flex flex-col sm:flex-row items-center gap-4 w-full">
+          <button className="w-full sm:w-32 py-2.5 rounded font-semibold text-md bg-indigo-600 text-white border-2 border-indigo-600">
+            Get started
+          </button>
+          <button className="w-full sm:w-32 py-2.5 rounded font-semibold text-md bg-white text-indigo-600 border-2 border-indigo-600">
+            Watch a Demo
+          </button>
+        </div>
       </div>
+
+      {/* Desktop View: Text First, then Image */}
+      <div className="hidden lg:flex lg:flex-col lg:items-start lg:text-left">
+        <h1 className="mt-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+          Win up to <span className="text-indigo-600 dark:text-indigo-600">70%</span> of your team’s time back with AI Chatbot
+        </h1>
+        <p className="mt-6 text-lg leading-8 text-gray-600">
+          ChatBot scans your website, help center, or other designated resource to provide quick and accurate AI-generated answers to customer questions.
+        </p>
+        <div className="mt-10 flex items-center gap-x-3">
+          <button className="w-1/2 sm:w-32 py-2.5 rounded font-semibold text-md bg-indigo-600 text-white border-2 border-indigo-600">
+            Get started
+          </button>
+          <button className="w-1/2 mt-4 sm:mt-0 sm:ml-4 sm:w-32 py-2.5 rounded font-semibold text-md bg-white text-indigo-600 border-2 border-indigo-600">
+            Watch a Demo
+          </button>
+        </div>
+      </div>
+
+      {/* Desktop View: Image on the Right */}
+      <div className="hidden lg:flex lg:justify-center lg:mt-10">
+        <img src="src/assets/img.webp" alt="Your Image Description" className="rounded-lg" />
+      </div>
+      
+    </div>
+  </div>
+  <div
+    className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+    aria-hidden="true"
+  >
+    <div className="relative"></div>
+  </div>
+</div>
+
+      </div>
+      <div className="fixed bottom-5 right-5 z-50">
+    <button className="bg-indigo-600 text-white p-2 md:p-3 rounded-full shadow-lg hover:bg-indigo-500 focus:outline-none">
+      <IoChatbubblesSharp className="h-7 w-7 md:h-10 md:w-10" />
+    </button>
+  </div>
     </div>
   );
 }

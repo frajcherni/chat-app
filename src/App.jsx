@@ -11,9 +11,11 @@ import Features from './components/Features';
 import Section4 from './components/Section4';
 const App = () => {
   return (
-    <div className=" min-h-screen w-full">
+    <div className=" min-h-screen w-full bg-costum">
       
       <HeroSection />
+      <Businesses />
+
       <AutomationSection />
 
       <TestimonialsList />
@@ -26,7 +28,6 @@ const App = () => {
       <Testimonial />
       
       <Features />
-      <Businesses />
   
     </div>
   );

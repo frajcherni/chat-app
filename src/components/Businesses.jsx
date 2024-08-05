@@ -5,18 +5,16 @@ export default function Businesses() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <section 
-      className="py-8 px-4 lg:py-16 lg:px-6 relative mt-[-4rem]"  // Adjust margin-top to move the section up
-    >
+    <section className="py-8 px-4 lg:py-16 lg:px-6 relative mt-14 sm:mt-8 md:mt-12 lg:mt-[-4rem]">
       <div className="mx-auto max-w-screen-xl">
         <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
-          <h2 className="mb-4 text-6xl tracking-tight font-extrabold">
+          <h2 className="mb-4 text-4xl md:text-6xl tracking-tight font-extrabold">
             {/* Main Title */}
           </h2>
         </div>
         <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
           <div className="flex flex-col justify-center">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold">
+            <h2 className="mb-4 text-3xl md:text-4xl tracking-tight font-extrabold">
               <span className="text-gray-900 dark:text-black">Engage website visitors on their terms with </span> 
               <span className="text-indigo-600 dark:text-indigo-600">live chat.</span>
             </h2>
@@ -31,23 +29,23 @@ export default function Businesses() {
                 Inbox and Chat Settings<br />
                 205,000+ customers in over 135 countries grow their businesses with HubSpot
               </p>
-              <button className="w-full sm:mt-0 sm:ml-4 sm:w-40 px-2 py-4 rounded font-semibold text-sm bg-white text-indigo-600 border-2 border-indigo-600">
-              Discover our live chat
-            </button>
-              
+              <button className="w-full sm:w-auto px-4 py-3.5 rounded font-semibold text-sm bg-white text-indigo-600 border-2 border-indigo-600">
+                Discover our live chat
+              </button>
             </div>
           </div>
           <div className="flex justify-center">
-            <img className="h-full w-full" src="src/assets/img.png" alt="Live Chat"/>
+            <img className="h-full w-full md:h-auto md:w-auto max-w-full max-h-full" src="src/assets/img.png" alt="Live Chat"/>
           </div>
         </div>
         <div className="text-center mb-4">
-          <p className="font-light text-black sm:text-xl ">
-            205,000+ customers in over 135 countries grow their businesses with our ChatBot
-          </p>
+        <p className="font-light text-black sm:text-xl" style={{ fontFamily: 'Roboto, sans-serif' }}>
+  205,000+ customers in over 135 countries grow their businesses with our ChatBot
+</p>
+
         </div>
         <div className="flex justify-center mt-8">
-          <div className="flex space-x-32 items-center border-2 border-indigo-600 rounded-full bg-white px-8 py-4">
+          <div className="flex space-x-8 md:space-x-16 items-center border-2 border-indigo-600 rounded-full bg-white px-4 py-2 md:px-8 md:py-4">
             <FaReddit className="w-6 h-6 text-indigo-600" />
             <FaCalendarAlt className="w-6 h-6 text-indigo-600" />
             <FaPaw className="w-6 h-6 text-indigo-600" />

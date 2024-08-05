@@ -2,7 +2,7 @@ import { FaCommentDots } from 'react-icons/fa'; // Modern chat-like icon
 
 const TestimonialsList = () => {
   return (
-    <section id="testimonials" aria-label="What our customers are saying" className="py-8 sm:py-16 ">
+    <section id="Testimonials" aria-label="What our customers are saying" className="py-8 sm:py-16 ">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <div className="flex justify-center mb-6">

@@ -1,4 +1,3 @@
-import React from 'react';
 import { AiOutlineCheck, AiOutlineShoppingCart, AiOutlineMail, AiOutlineCustomerService } from 'react-icons/ai';
 
 const Card = ({ title, points, Icon }) => {

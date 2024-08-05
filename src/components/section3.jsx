@@ -5,9 +5,9 @@ const Section3 = () => {
     <div className="flex pt-12 px-6 md:px-20 items-center justify-center md:h-screen overflow-hidden bg-purple-200">
       <div className="flex flex-col md:flex-row items-center max-w-8xl">
           
-        <div className="w-full md:w-1/2 lg:pr-16"> {/* Adjusted padding-right to bring closer */}
+        <div className="w-full md:w-1/2 lg:pr-16">
         
-        <h2 className="mb-4 text-4xl tracking-tight font-extrabold">
+        <h2 className="mb-4 text-3xl sm:text-4xl lg:text-4xltracking-tight font-extrabold">
               <span className="text-gray-900 dark:text-black">Supercharge your lead </span> 
               <span className="text-indigo-600 dark:text-indigo-600">generation</span>
             </h2>

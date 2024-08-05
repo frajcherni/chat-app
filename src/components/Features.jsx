@@ -1,4 +1,3 @@
-import React from 'react';
 import { AiOutlineBook, AiOutlineTeam, AiOutlineLink, AiOutlineClockCircle } from 'react-icons/ai';
 
 const Card = ({ title, description, Icon }) => {
@@ -42,7 +41,7 @@ const CardSection = () => {
   return (
     <section className="min-h-screen flex flex-col items-center py-12 sm:py-16 mt-8 sm:mt-16 bg-purple-200">
       <div className="text-center mb-12 max-w-3xl">
-        <h2 className="mb-4 text-3xl sm:text-4xl lg:text-4xl tracking-tight font-extrabold">
+        <h2 className="mb-4 text-2xl sm:text-3xl lg:text-4xl tracking-tight font-extrabold">
           <span className="text-gray-900 dark:text-black">What makes our </span> <span className="text-indigo-600 dark:text-indigo-600">ChatBot different</span>
         </h2>
         <p className="mb-8 font-light text-gray-500 lg:mb-12 sm:text-lg dark:text-gray-400">
