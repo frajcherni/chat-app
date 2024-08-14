@@ -1,54 +1,65 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const cases = [
+const data = [
   {
-    title: "When you need a human touch",
-    image: `${import.meta.env.BASE_URL}images/img6.png`,
+    title: "Story Replies & Reactions",
     description:
-      "No more wading through dense documents to find a single piece of information. Our AI chatbots sift through taxpayer data, promptly addressing refund statuses, deductible queries, and much more.",
-    iconImage: `${import.meta.env.BASE_URL}images/human.png`,
+      "Engage with your audience through story replies and reactions, enhancing your interaction and building stronger connections.",
+    image: "/images/instaa.png",
+    iconImage: "/images/instagram-stories.png", // Replace with your image path
   },
   {
-    title: "Never miss a date with Us",
-    image: `${import.meta.env.BASE_URL}images/img7.png`,
+    title: "Feed Posts",
     description:
-      "Sometimes, AI can't replace the assurance a human voice provides, especially when audits loom large. In such cases, Tars ensures a smooth handover to agents who can provide that personalized guidance every taxpayer seeks.",
-    iconImage: `${import.meta.env.BASE_URL}images/calendar.png`,
+      "Share captivating feed posts to boost visibility and encourage engagement, turning your content into a conversation starter.",
+    image: "/images/41.webp",
+    iconImage: "/images/post.png", // Replace with your image path
   },
   {
-    title: "Making the tax conversation easy",
-    image: `${import.meta.env.BASE_URL}images/education-1-min.png`,
+    title: "Reels",
     description:
-      "In the bustle of life, it's easy to forget deadlines. But with Tars on your side, taxpayers receive timely reminders and insightful tips, ensuring they stay on top of their tax game, straight on their preferred channels.",
-    iconImage: `${import.meta.env.BASE_URL}images/chat.png`,
+      "Create and share dynamic reels to captivate your audience with short, engaging videos that highlight your brand’s unique aspects.",
+    image: "/images/42.webp",
+    iconImage: "/images/camera.png", // Replace with your image path
+  },
+  {
+    title: "Instagram Live",
+    description:
+      "Go live on Instagram to connect with your audience in real-time, offering them a chance to engage directly and ask questions.",
+    image: "/images/43.webp",
+    iconImage: "/images/instagram-live.png", // Replace with your image path
   },
 ];
 
-const UseCaseEntreprise = () => {
+
+const SolutionSection2 = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   return (
     <section 
-      id="Testimonials" 
-      aria-label="What our customers are saying" 
-      className="py-2 sm:py-4 bg-purple-100"
+      id="Solutions" 
+      aria-label="Our Solutions" 
+      className="py-2 sm:py-4 "
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-16">
         <div className="mx-auto max-w-2xl text-center">
+        <div className="mx-auto max-w-2xl text-center">
           <h2 className="mb-4 sm:mb-6 md:mb-8 text-4xl sm:text-4xl lg:text-4xl font-extrabold">
             <span className="text-gray-900 dark:text-black">
-              Enterprise <span className="text-indigo-600 dark:text-indigo-600">Use Case</span> Templates
+            Drive higher conversions and sales with <span className="text-indigo-600 dark:text-indigo-600">              Instagram DM Marketing
+</span>
             </span>
           </h2>
           <p className="mb-4 sm:mb-6 lg:mb-8 font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
-            Your own generative AI Large Language Model framework, designed and launched in minutes without coding, based on your resources.
-          </p>
+          Your own generative AI Large Language Model framework, designed and
+          launched in minutes without coding, based on your resources.          </p>
+        </div>
         </div>
         <div className="flex flex-col lg:flex-row w-full max-w-5xl mx-auto">
           {/* Description Section */}
-          <div className="lg:w-1/2 space-y-8 m">
-            {cases.map((caseItem, index) => (
+          <div className="lg:w-1/2 space-y-8">
+            {data.map((item, index) => (
               <div key={index}>
                 <div
                   onClick={() => setSelectedIndex(index)}
@@ -58,21 +69,23 @@ const UseCaseEntreprise = () => {
                       : "border-transparent hover:bg-white hover:border-gray-300"
                   }`}
                 >
-                  <div className="flex items-start ">
+                  <div className="flex items-start">
                     <div className="flex-shrink-0">
                       <img
-                        src={caseItem.iconImage}
-                        alt={caseItem.title}
+                        src={item.iconImage}
+                        alt={item.title}
                         className="w-12 h-12 mr-4"
                       />
                     </div>
                     <div className="flex-grow">
                       <h3 className="text-lg font-bold text-gray-900 mb-2">
-                        {caseItem.title}
+                        {item.title}
                       </h3>
-                      <p className="text-gray-700">
-                        {caseItem.description}
-                      </p>
+                      {selectedIndex === index && (
+                        <p className="text-gray-700">
+                          {item.description}
+                        </p>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -81,9 +94,9 @@ const UseCaseEntreprise = () => {
                 {selectedIndex === index && (
                   <div className="mt-4 block lg:hidden">
                     <motion.img
-                      key={caseItem.image}
-                      src={caseItem.image}
-                      alt={caseItem.title}
+                      key={item.image}
+                      src={item.image}
+                      alt={item.title}
                       className="w-full max-w-md rounded-lg"
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
@@ -98,9 +111,9 @@ const UseCaseEntreprise = () => {
           {/* Desktop Image Section */}
           <div className="lg:w-1/2 hidden lg:flex justify-center items-center">
             <motion.img
-              key={cases[selectedIndex].image}
-              src={cases[selectedIndex].image}
-              alt={cases[selectedIndex].title}
+              key={data[selectedIndex].image}
+              src={data[selectedIndex].image}
+              alt={data[selectedIndex].title}
               className="w-full max-w-md rounded-lg"
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
@@ -113,4 +126,4 @@ const UseCaseEntreprise = () => {
   );
 };
 
-export default UseCaseEntreprise;
+export default SolutionSection2;

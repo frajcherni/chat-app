@@ -34,7 +34,7 @@ const callsToAction = [
   { name: 'Contact sales', href: '#', icon: PhoneIcon },
 ];
 
-export default function HeroSection() {
+export default function InstagramComponent() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -44,19 +44,22 @@ export default function HeroSection() {
   
 
 
-<div className="sm:py-32 lg:pb-40">
+<div className="sm:py-24 lg:pb-40">
   <div className="mt-24 mx-auto max-w-7xl px-6 lg:px-8">
     <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
       
       {/* Mobile View */}
       <div className="flex flex-col items-center lg:hidden">
-        <img src={`${import.meta.env.BASE_URL}images/img.webp`} alt="Your Image Description" className="rounded-lg mb-6" />
+        <img src={`${import.meta.env.BASE_URL}images/insta.png`} alt="Your Image Description" className="rounded-lg mb-6" />
         <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl text-center">
-          Win up to <span className="text-indigo-600 dark:text-indigo-600">70%</span> of your team’s time back with AI Chatbot
+        Discover the real power of <span className="text-indigo-600 dark:text-indigo-600">Instagram DM</span> 
         </h1>
         <p className="mt-6 text-lg leading-8 text-gray-600 text-center">
-          ChatBot scans your website, help center, or other designated resource to provide quick and accurate AI-generated answers to customer questions.
+        Attract quality leads, drive more sales, and reply to conversations 24/7 with Instagram DM Marketing
         </p>
+
+
+
         <div className="mt-10 flex flex-col sm:flex-row items-center gap-4 w-full">
           <button className="w-full sm:w-32 py-2.5 rounded font-semibold text-md bg-indigo-600 text-white border-2 border-indigo-600">
             Get started
@@ -70,10 +73,10 @@ export default function HeroSection() {
       {/* Desktop View */}
       <div className="hidden lg:flex lg:flex-col lg:items-start lg:text-left">
         <h1 className="mt-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-          Win up to <span className="text-indigo-600 dark:text-indigo-600">70%</span> of your team’s time back with AI Chatbot
+        Discover the real power of <span className="text-indigo-600 dark:text-indigo-600">Instagram DM</span> 
         </h1>
         <p className="mt-6 text-lg leading-8 text-gray-600">
-          ChatBot scans your website, help center, or other designated resource to provide quick and accurate AI-generated answers to customer questions.
+        Attract quality leads, drive more sales, and reply to conversations 24/7 with Instagram DM Marketing
         </p>
         <div className="mt-10 flex items-center gap-x-3">
           <button className="w-1/2 sm:w-32 py-2.5 rounded font-semibold text-md bg-indigo-600 text-white border-2 border-indigo-600">
@@ -86,8 +89,8 @@ export default function HeroSection() {
       </div>
 
       {/* Desktop View */}
-      <div className="hidden lg:flex lg:justify-center lg:mt-10">
-        <img src={`${import.meta.env.BASE_URL}images/img.webp`} alt="Your Image Description" className="rounded-lg" />
+      <div className="hidden lg:flex lg:justify-center lg:mt-10 ">
+        <img src={`${import.meta.env.BASE_URL}images/insta.png`} alt="Your Image Description" className="rounded-lg " />
       </div>
       
     </div>

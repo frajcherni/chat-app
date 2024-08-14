@@ -5,7 +5,7 @@ export default function Businesses() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <section className="py-8 px-4 lg:py-16 lg:px-6 relative mt-14 sm:mt-8 md:mt-12 lg:mt-[-4rem]">
+    <section className="py-8 px-4 lg:py-16 lg:px-6 relative sm:mt-8 md:mt-12 lg:mt-[-4rem]">
       <div className="mx-auto max-w-screen-xl">
         <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
           <h2 className="mb-4 text-4xl md:text-6xl tracking-tight font-extrabold">
