@@ -1,39 +1,105 @@
-import React from 'react';
+import { useState } from 'react';
+import { AiOutlineArrowRight } from 'react-icons/ai';
+import { IoChatbubblesSharp } from 'react-icons/io5';
+import {
+  Dialog,
+  Disclosure,
+  DisclosureButton,
+  DisclosurePanel,
+  Popover,
+  PopoverButton,
+  PopoverGroup,
+} from '@headlessui/react';
+import {
+  ArrowPathIcon,
+  Bars3Icon,
+  ChartPieIcon,
+  CursorArrowRaysIcon,
+  FingerPrintIcon,
+  SquaresPlusIcon,
+  XMarkIcon,
+} from '@heroicons/react/24/outline';
+import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid';
+import { FaFacebookF, FaInstagram, FaWhatsapp, FaSms } from 'react-icons/fa'; // Add necessary icons
 
-const WatsapSection1 = () => {
+const socialMedia = [
+  { name: 'Facebook', description: 'Facebook Messenger Chatbot', href: '#', icon: FaFacebookF },
+  { name: 'Instagram', description: 'Automate your Instagram marketing', href: '/product/instagram', icon: FaInstagram },
+  { name: 'WhatsApp', description: 'Connect with customers instantly', href: '#', icon: FaWhatsapp },
+  { name: 'SMS', description: 'Text with customers', href: '#', icon: FaSms },
+];
+
+const callsToAction = [
+  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
+  { name: 'Contact sales', href: '#', icon: PhoneIcon },
+];
+
+export default function HeroSection() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
-    <div className="flex flex-col mt-20">
-      <div className="flex pt-12 px-6 md:px-20 items-center justify-center">
-        <div className="flex flex-col md:flex-row items-center max-w-8xl">
-          <div className="w-full md:w-1/2 lg:pr-16 mt-8">
-            <h2 className="mb-4 text-3xl sm:text-4xl lg:text-6xl tracking-tight font-extrabold">
-              <span className="text-gray-900 dark:text-black">Automate & sell on <span className="text-indigo-600 dark:text-indigo-600">WhatsApp </span>
- like never before </span>
-            </h2>
-            <h3 className="mt-6 md:mt-8 text-md lg:text-xl text-center md:text-left text-gray-700 font-light tracking-wider leading-relaxed">
-            Boost sales, automate answers, and reengage your contacts with ease.            </h3>
-            <div className="mt-8 flex flex-col sm:flex-row justify-center md:justify-start">
-              <button className="w-full sm:w-40 px-4 py-3 rounded font-semibold text-md bg-indigo-600 text-white border-2 border-indigo-600">
-                Get started
-              </button>
-              <button className="w-full mt-4 sm:mt-0 sm:ml-4 sm:w-40 px-4 py-3 rounded font-semibold text-md bg-white text-indigo-600 border-2 border-indigo-600">
-                Watch a Demo
-              </button>
+    <div className="relative">
+      <div className="absolute inset-0 blur-xl h-[580px]" />
+      <div className="relative">
+        <div className="sm:py-8 lg:pb-40 ">
+          <div className="mt-24 mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+              {/* Mobile View */}
+              <div className="flex flex-col items-center lg:hidden">
+                <img src={`${import.meta.env.BASE_URL}images/watsap.png`} alt="WhatsApp Chatbot" className="rounded-lg mb-6" />
+                <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl text-center">
+                  Revolutionize your customer interactions with <span className="text-indigo-600 dark:text-indigo-600">WhatsApp</span>                </h1>
+                <p className="mt-6 text-lg leading-8 text-gray-600 text-center">
+                  Experience seamless communication with our AI-powered WhatsApp chatbot. Instantly connect with customers, automate responses, and enhance engagement while saving up to <span className="text-indigo-600 dark:text-indigo-600">70%</span> of your team's time.
+                </p>
+                <div className="mt-10 flex flex-col sm:flex-row items-center gap-4 w-full">
+                  <button className="w-full sm:w-32 py-2.5 rounded font-semibold text-md bg-indigo-600 text-white border-2 border-indigo-600">
+                    Get Started
+                  </button>
+                  <button className="w-full sm:w-32 py-2.5 rounded font-semibold text-md bg-white text-indigo-600 border-2 border-indigo-600">
+                    Watch a Demo
+                  </button>
+                </div>
+              </div>
+
+              {/* Desktop View */}
+              <div className="hidden lg:flex lg:flex-col lg:items-start lg:text-left">
+                <h1 className="mt-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+                  Revolutionize your customer interactions with <span className="text-indigo-600 dark:text-indigo-600">WhatsApp</span>
+                </h1>
+                <p className="mt-6 text-lg leading-8 text-gray-600">
+                  Experience seamless communication with our AI-powered WhatsApp chatbot. Instantly connect with customers, automate responses, and enhance engagement while saving up to <span className="text-indigo-600 dark:text-indigo-600">70%</span> of your team's time.
+                </p>
+                <div className="mt-10 flex items-center gap-x-3">
+                  <button className="w-1/2 sm:w-32 py-2.5 rounded font-semibold text-md bg-indigo-600 text-white border-2 border-indigo-600">
+                    Get Started
+                  </button>
+                  <button className="w-1/2 mt-4 sm:mt-0 sm:ml-4 sm:w-32 py-2.5 rounded font-semibold text-md bg-white text-indigo-600 border-2 border-indigo-600">
+                    Watch a Demo
+                  </button>
+                </div>
+              </div>
+
+              {/* Desktop View Image */}
+              <div className="hidden lg:flex lg:justify-center lg:mt-10">
+                <img src={`${import.meta.env.BASE_URL}images/watsap.png`} alt="WhatsApp Chatbot" className="rounded-lg" />
+              </div>
             </div>
           </div>
-          <div className="w-full md:w-1/2 flex justify-center md:justify-end mt-8 md:mt-0">
-            <img 
-              src={`${import.meta.env.BASE_URL}images/watsap.png`} 
-              alt="Instagram DM Marketing" 
-              className="w-full max-w-lg h-auto mt-8"  // Adjusted margin-top
-            />
+          <div
+            className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+            aria-hidden="true"
+          >
+            <div className="relative"></div>
           </div>
         </div>
-      </div>
 
-     
+        <div className="fixed bottom-5 right-5 z-50">
+          <button className="bg-indigo-600 text-white p-2 md:p-3 rounded-full shadow-lg hover:bg-indigo-500 focus:outline-none">
+            <IoChatbubblesSharp className="h-7 w-7 md:h-10 md:w-10" />
+          </button>
+        </div>
+      </div>
     </div>
   );
-};
-
-export default WatsapSection1;
+}

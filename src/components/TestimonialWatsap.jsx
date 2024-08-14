@@ -22,7 +22,7 @@ export default function TestimonialWatsap() {
           <figcaption className="flex items-center justify-center mt-6 space-x-3">
             <img className="w-10 h-10 rounded-full" src="/images/cherni.png" alt="profile picture"/>
             <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-              <div className="pr-3 font-medium text-gray-900">Micheal Gough</div>
+              <div className="pr-3 font-medium text-gray-900">Cherni Fraj</div>
               <div className="pl-3 text-sm font-light text-gray-600">CEO at Google</div>
             </div>
           </figcaption>

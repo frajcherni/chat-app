@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Instatestimonial() {
   return (
-    <section className="bg-white">
+    <section className="bg-slate-50">
       <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
         {/* Title */}
         <h2 className="text-3xl sm:text-4xl lg:text-4xl font-extrabold text-black mb-8">
@@ -23,7 +23,7 @@ export default function Instatestimonial() {
           <figcaption className="flex items-center justify-center mt-6 space-x-3">
             <img className="w-10 h-10 rounded-full" src="/images/cherni.png" alt="profile picture"/>
             <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-              <div className="pr-3 font-medium text-gray-900">Micheal Gough</div>
+              <div className="pr-3 font-medium text-gray-900">Cherni Fraj</div>
               <div className="pl-3 text-sm font-light text-gray-600">CEO at Google</div>
             </div>
           </figcaption>
