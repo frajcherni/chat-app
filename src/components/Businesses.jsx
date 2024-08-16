@@ -15,14 +15,15 @@ export default function Businesses() {
   return (
     <section className="py-12 px-6 lg:py-20 lg:px-8 relative sm:mt-8 md:mt-12 lg:mt-[-0rem] bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
       <div className="mx-auto max-w-screen-xl">
-        <div className="mx-auto max-w-screen-sm text-center mb-12 lg:mb-20">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 dark:text-white">
-            Supercharge Your <span className="text-indigo-600 dark:text-indigo-500">Business</span>
-          </h2>
-          <p className="text-lg md:text-xl lg:text-2xl text-gray-600 dark:text-gray-300 font-light">
-            Elevate customer interactions with our advanced live chat solutions.
-          </p>
-        </div>
+      <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
+  <h2 className="text-3xl md:text-2xl lg:text-4xl font-extrabold text-gray-900 dark:text-white">
+    Supercharge Your <span className="text-indigo-600 dark:text-indigo-500">Business</span>
+  </h2>
+  <p className="text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 font-normal mt-4">
+    Elevate customer interactions with our advanced live chat solutions.
+  </p>
+</div>
+
         <div className="grid gap-8 md:gap-12 lg:gap-16 md:grid-cols-2">
           <div className="flex flex-col justify-center">
             <h3 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 dark:text-white mb-6">
