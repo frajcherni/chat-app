@@ -1,43 +1,46 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HeroSection from './components/HeroSection';
-import TestimonialsList from './components/TestimonialsList';
-import CardSection from './components/CardSection';
-import Testimonial from './components/Testimonial';
-import UseCaseEntreprise from './components/UseCaseEntreprise';
-import Businesses from './components/Businesses';
-import AutomationSection from './components/Automation';
-import Section3 from './components/section3';
-import Features from './components/Features';
-import InstagramComponent from './components/InstagramComponent'; 
-import Header from './components/Header';
-import InstagramSection from './components/Intagramsection';
-import HoverImageLinks from './components/InstagramSection2';
-import InstagramSection3 from './components/InstagramSection3';
-import InstaSection4 from './components/InstaSection4';
-import Instatestimonial from './components/Instatestimonial';
-import WatsapSection1 from './components/WatsapSection1';
-import WatsappSection2 from './components/WatsappSection2';
-import WatsappSection3 from './components/WatsappSection3';
-import TestimonialWatsap from './components/TestimonialWatsap';
+import HeroSection from './components/Landing/HeroSection';
+import TestimonialsList from './components/Landing/TestimonialsList';
+import CardSection from './components/Landing/CardSection';
+import Testimonial from './components/Testimonial'; // need to improve
+import UseCaseEntreprise from './components/Landing/UseCaseEntreprise';
+import Businesses from './components/Landing/Businesses';
+import AutomationSection from './components/Landing/Automation';
+import Section3 from './components/Landing/section3';
+import Features from './components/Landing/Features';
+import InstagramComponent from './components/Instagram/InstagramComponent'; 
+import Header from './components/Header/Header';
+import InstagramSection from './components/Instagram/Intagramsection';
+import HoverImageLinks from './components/Instagram/InstagramSection2';
+import InstagramSection3 from './components/Instagram/InstagramSection3';
+import InstaSection4 from './components/Instagram/InstaSection4';
+import Instatestimonial from './components/Instagram/Instatestimonial';
+import WatsapSection1 from './components/WatsApp/WatsapSection1';
+import WatsappSection2 from './components/WatsApp/WatsappSection2';
+import WatsappSection3 from './components/WatsApp/WatsappSection3';
+import TestimonialWatsap from './components/WatsApp/TestimonialWatsap';
 
-import WatsappSection4 from './components/WatsappSection4';
-import Solution from './components/Solution';
-import WatsappSection5 from './components/WatsappSection5';
-import SolutionSection2 from './SolutionSection2';
-import SolutionSection3 from './components/SolutionSection3';
+import WatsappSection4 from './components/WatsApp/WatsappSection4';
+import WatsappSection5 from './components/WatsApp/WatsappSection5'
+import SolutionSection3 from './components/Solutions/SolutionSection3';
+import SolutionSection2 from './components/Solutions/SolutionSection2';
+import Solution from './components/Solutions/Solution';
 
-import WhyUs from './components/WhyUs';
-import ChatbotBenefits from './components/ChatbotBenefits';
-import Description from './components/Description';
 
-import Feature from './components/Feature'
-import EarthSection from './components/Earthsection'
 
-import Pricing from './components/Pricing'
-import PricingSection2 from './components/PricingSection2';
-import Footer from './components/Footer';
-  // Correct import path for Swiper 11.x
+import WhyUs from './components/Features/WhyUs';
+import ChatbotBenefits from './components/Features/ChatbotBenefits';
+import Description from './components/Features/Description';
+import Feature from './components/Features/Feature'
+
+
+import EarthSection from './components/Earthsection' // need to improve
+
+import Pricing from './components/Pricing/Pricing'
+import PricingSection2 from './components/Pricing/PricingSection2';
+
+import Footer from './components/Footer'; // needs to be improved
 
 
 const App = () => {
