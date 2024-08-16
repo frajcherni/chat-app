@@ -21,5 +21,17 @@
     @apply font-cursive;
   }
   
-  @import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
+
+
+@keyframes zoom {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.animate-zoom {
+  animation: zoom 3s infinite ease-in-out;
+}

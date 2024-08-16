@@ -44,7 +44,7 @@ export default function HeroSection() {
   
 
 
-<div className="sm:py-32 lg:pb-40">
+<div className="sm:py-12 lg:pb-40">
   <div className="mt-24 mx-auto max-w-7xl px-6 lg:px-8">
     <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
       

@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        cursive: ['system-ui']
+        cursive: ['Inter', 'sans-serif']
       },
     },
   },

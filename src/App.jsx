@@ -26,16 +26,29 @@ import Solution from './components/Solution';
 import WatsappSection5 from './components/WatsappSection5';
 import SolutionSection2 from './SolutionSection2';
 import SolutionSection3 from './components/SolutionSection3';
+
+import WhyUs from './components/WhyUs';
+import ChatbotBenefits from './components/ChatbotBenefits';
+import Description from './components/Description';
+
+import Feature from './components/Feature'
+import EarthSection from './components/Earthsection'
+
+import Pricing from './components/Pricing'
+import PricingSection2 from './components/PricingSection2';
+
+
 const App = () => {
   return (
     <Router>
-      <div className='font-cursive'>
+      <div className=''>
         <Header />
         <Routes>
           <Route path="/" element={
             <>
               <HeroSection />
               <AutomationSection />
+
               <TestimonialsList />
               <CardSection />
               <Businesses />
@@ -64,6 +77,37 @@ const App = () => {
               <Solution />
               <SolutionSection2 />
               <SolutionSection3 />
+      
+
+
+            </>
+            
+          } />
+
+
+
+<Route path="/whyus" element={
+            <>
+              <WhyUs />
+              <ChatbotBenefits />
+              <Feature />
+
+              <Description />
+           
+      
+
+
+            </>
+            
+          } />
+
+<Route path="/pricing" element={
+            <>
+              <Pricing />
+              <PricingSection2 />
+
+        
+           
       
 
 

@@ -20,17 +20,18 @@ export default function Header() {
     <div className="relative">
       <header className="fixed top-0 left-0 right-0 z-50 bg-white">
         <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
-          <div className="flex lg:flex-1">
-            <a href="/" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              {/* Replace this with your logo */}
-              <svg className="h-8 w-8 text-indigo-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path
-                  d="M11 1a10 10 0 00-10 10c0 4.5 2.4 8.4 5.9 10.3-.2-.8-.3-1.7-.3-2.6v-2.7a7.6 7.6 0 01-3.6-1V16c0-1.7.7-3.3 1.8-4.4v-.1c-1.5-.7-2.6-2.2-2.6-4.1 0-2.4 1.9-4.4 4.3-4.4s4.3 2 4.3 4.4c0 1.9-1.1 3.4-2.6 4.1v.1c1.1 1.1 1.8 2.7 1.8 4.4v1.3c-.7.4-1.5.7-2.3.9V18c0 .9-.1 1.8-.3 2.6C18.6 19.4 21 15.5 21 11a10 10 0 00-10-10zM12 4a3.5 3.5 0 00-3.5 3.5c0 1.5.9 2.8 2.2 3.3l.8.3.8-.3c1.3-.5 2.2-1.8 2.2-3.3A3.5 3.5 0 0012 4zm-1.7 7.8l-1.6-.8c-.4-.2-.6-.7-.6-1.1s.2-.9.6-1.1l1.6-.8c.4-.2.9-.2 1.3 0l1.6.8c.4.2.6.7.6 1.1s-.2.9-.6 1.1l-1.6.8c-.4.2-.9.2-1.3 0z"
-                />
-              </svg>
-            </a>
-          </div>
+        <div className="flex lg:flex-1">
+  <a href="/" className="-m-1.5 p-1.5">
+    <span className="sr-only">Your Company</span>
+    {/* Replace this with your logo */}
+    <img
+      src="images/logo.png"
+      className="h-10 w-10 sm:h-14 sm:w-12 md:h-12 md:w-12 lg:h-16 lg:w-16"
+      alt="Company Logo"
+    />
+  </a>
+</div>
+
           <div className="flex lg:hidden">
             <button
               type="button"
@@ -42,8 +43,8 @@ export default function Header() {
             </button>
           </div>
           <Popover.Group className="hidden lg:flex lg:gap-x-12">
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Resources</a>
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Pricing</a>
+            <a href="/whyus" className="text-sm font-semibold leading-6 text-gray-900">Why Us ?</a>
+            <a href="pricing" className="text-sm font-semibold leading-6 text-gray-900">Pricing</a>
             <a href="/solution" className="text-sm font-semibold leading-6 text-gray-900">E-commerce Solution</a>
             <Popover className="relative">
               <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
@@ -107,13 +108,13 @@ export default function Header() {
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   <a
-                    href="#"
+                    href="whyus"
                     className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
-                    Resources
+                    Why Us ?
                   </a>
                   <a
-                    href="#"
+                    href="pricing"
                     className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Pricing
