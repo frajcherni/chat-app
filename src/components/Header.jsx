@@ -22,10 +22,9 @@ export default function Header() {
         <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
   <a href="/" className="-m-1.5 p-1.5">
-    <span className="sr-only">Your Company</span>
     {/* Replace this with your logo */}
     <img
-      src="images/logo.png"
+      src="/images/logo.png"
       className="h-10 w-10 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14"
       alt="Company Logo"
     />
@@ -43,7 +42,7 @@ export default function Header() {
             </button>
           </div>
           <Popover.Group className="hidden lg:flex lg:gap-x-12">
-            <a href="/whyus" className="text-sm font-semibold leading-6 text-gray-900">Why Us ?</a>
+            <a href="/Features" className="text-sm font-semibold leading-6 text-gray-900">Features</a>
             <a href="pricing" className="text-sm font-semibold leading-6 text-gray-900">Pricing</a>
             <a href="/solution" className="text-sm font-semibold leading-6 text-gray-900">E-commerce Solution</a>
             <Popover className="relative">
@@ -81,19 +80,14 @@ export default function Header() {
           <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="/" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
+
                 {/* Replace this with your logo */}
-                <svg
-                  className="h-8 w-8 text-indigo-600"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M11 1a10 10 0 00-10 10c0 4.5 2.4 8.4 5.9 10.3-.2-.8-.3-1.7-.3-2.6v-2.7a7.6 7.6 0 01-3.6-1V16c0-1.7.7-3.3 1.8-4.4v-.1c-1.5-.7-2.6-2.2-2.6-4.1 0-2.4 1.9-4.4 4.3-4.4s4.3 2 4.3 4.4c0 1.9-1.1 3.4-2.6 4.1v.1c1.1 1.1 1.8 2.7 1.8 4.4v1.3c-.7.4-1.5.7-2.3.9V18c0 .9-.1 1.8-.3 2.6C18.6 19.4 21 15.5 21 11a10 10 0 00-10-10zM12 4a3.5 3.5 0 00-3.5 3.5c0 1.5.9 2.8 2.2 3.3l.8.3.8-.3c1.3-.5 2.2-1.8 2.2-3.3A3.5 3.5 0 0012 4zm-1.7 7.8l-1.6-.8c-.4-.2-.6-.7-.6-1.1s.2-.9.6-1.1l1.6-.8c.4-.2.9-.2 1.3 0l1.6.8c.4.2.6.7.6 1.1s-.2.9-.6 1.1l-1.6.8c-.4.2-.9.2-1.3 0z"
-                  />
-                </svg>
+               
+                <img
+      src="/images/logo.png"
+      className="h-10 w-10 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14"
+      alt="Company Logo"
+    />
               </a>
               <button
                 type="button"
@@ -108,10 +102,10 @@ export default function Header() {
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   <a
-                    href="whyus"
+                    href="Features"
                     className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
-                    Why Us ?
+                    Features
                   </a>
                   <a
                     href="pricing"

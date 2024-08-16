@@ -37,6 +37,7 @@ import EarthSection from './components/Earthsection'
 import Pricing from './components/Pricing'
 import PricingSection2 from './components/PricingSection2';
 import Footer from './components/Footer';
+  // Correct import path for Swiper 11.x
 
 
 const App = () => {
@@ -87,7 +88,7 @@ const App = () => {
 
 
 
-<Route path="/whyus" element={
+<Route path="/Features" element={
             <>
               <WhyUs />
               <ChatbotBenefits />

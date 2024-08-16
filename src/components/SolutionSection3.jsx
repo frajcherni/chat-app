@@ -8,7 +8,7 @@ const CombinedSection = () => {
         <div className="w-full md:w-1/2 flex flex-col md:flex-row justify-center md:justify-start mt-8 md:mt-0">
           <div className="block md:hidden text-center mb-4">
             <h2 className="text-3xl sm:text-4xl lg:text-4xl tracking-tight font-extrabold">
-              Supercharge your eCommerce <span className="text-indigo-600 dark:text-indigo-600">Growth</span>
+              Supercharge your lead <span className="text-indigo-600 dark:text-indigo-600">Generation</span>
             </h2>
           </div>
           <video
@@ -22,11 +22,11 @@ const CombinedSection = () => {
         <div className="w-full md:w-1/2 lg:pl-16">
           <div className="hidden md:block">
             <h2 className="mb-4 text-3xl sm:text-4xl lg:text-4xl tracking-tight font-extrabold">
-              Supercharge your eCommerce <span className="text-indigo-600 dark:text-indigo-600">Growth</span>
+              Supercharge your lead <span className="text-indigo-600 dark:text-indigo-600">Generation</span>
             </h2>
           </div>
           <h3 className="mt-6 md:mt-8 text-md lg:text-xl text-center md:text-left text-gray-700 font-light tracking-wider leading-relaxed">
-            Drive your eCommerce success with targeted strategies to capture and convert leads. Enhance your sales process and boost customer engagement through seamless integrations and automation.
+            Enhance your eCommerce performance with targeted lead generation strategies. Capture valuable customer information and integrate it seamlessly into your sales and marketing processes.
           </h3>
         </div>
       </div>
@@ -54,7 +54,7 @@ const CombinedSection = () => {
             </h2>
           </div>
           <h3 className="mt-6 md:mt-8 text-md lg:text-xl text-center md:text-left text-gray-700 font-light tracking-wider leading-relaxed">
-            Easily launch and manage your online store with our user-friendly tools and templates. No technical skills needed—just customize and start selling with our pre-built solutions and automation features.
+            Start building your online store effortlessly with our intuitive tools and templates. Customize pre-built designs or use AI-generated content without any technical skills required.
           </h3>
         </div>
       </div>
@@ -64,7 +64,7 @@ const CombinedSection = () => {
         <div className="w-full md:w-1/2 flex flex-col md:flex-row justify-center md:justify-start mt-8 md:mt-0">
           <div className="block md:hidden text-center mb-4">
             <h2 className="text-3xl sm:text-4xl lg:text-4xl tracking-tight font-extrabold">
-              Boost your eCommerce <span className="text-indigo-600 dark:text-indigo-600">Sales</span>
+              Supercharge your lead <span className="text-indigo-600 dark:text-indigo-600">Generation</span>
             </h2>
           </div>
           <video
@@ -78,11 +78,11 @@ const CombinedSection = () => {
         <div className="w-full md:w-1/2 lg:pl-16">
           <div className="hidden md:block">
             <h2 className="mb-4 text-3xl sm:text-4xl lg:text-4xl tracking-tight font-extrabold">
-              Boost your eCommerce <span className="text-indigo-600 dark:text-indigo-600">Sales</span>
+              Supercharge your lead <span className="text-indigo-600 dark:text-indigo-600">Generation</span>
             </h2>
           </div>
           <h3 className="mt-6 md:mt-8 text-md lg:text-xl text-center md:text-left text-gray-700 font-light tracking-wider leading-relaxed">
-            Optimize your sales funnel with our powerful eCommerce tools. Capture customer data, enhance engagement, and drive conversions with automation that streamlines your operations.
+            Improve your eCommerce sales with automated lead capture and engagement. Collect customer information efficiently and use it to drive higher sales conversions and enhance your marketing strategies.
           </h3>
         </div>
       </div>
@@ -110,7 +110,7 @@ const CombinedSection = () => {
             </h2>
           </div>
           <h3 className="mt-6 md:mt-8 text-md lg:text-xl text-center md:text-left text-gray-700 font-light tracking-wider leading-relaxed">
-            Harness our intuitive tools and customizable templates to create your online store with ease. Effortlessly set up and manage your eCommerce site with no technical background required.
+            Leverage our AI Assistant and customizable templates to set up your eCommerce operations quickly. Edit and optimize automated processes with just a few clicks, regardless of your technical background.
           </h3>
         </div>
       </div>
