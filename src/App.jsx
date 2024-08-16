@@ -36,6 +36,7 @@ import EarthSection from './components/Earthsection'
 
 import Pricing from './components/Pricing'
 import PricingSection2 from './components/PricingSection2';
+import Footer from './components/Footer';
 
 
 const App = () => {
@@ -130,6 +131,7 @@ const App = () => {
             
           } />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

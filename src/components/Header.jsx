@@ -26,7 +26,7 @@ export default function Header() {
     {/* Replace this with your logo */}
     <img
       src="images/logo.png"
-      className="h-10 w-10 sm:h-14 sm:w-12 md:h-12 md:w-12 lg:h-16 lg:w-16"
+      className="h-10 w-10 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14"
       alt="Company Logo"
     />
   </a>

@@ -39,9 +39,9 @@ export default function Businesses() {
               <p className="mb-6 font-semibold text-gray-400">
                 Trusted by 205,000+ businesses in 135+ countries.
               </p>
-              <button className="w-full sm:w-auto px-6 py-3 rounded-lg font-bold text-white bg-indigo-600 hover:bg-indigo-700 transition duration-200">
+              <a href='/whyus' className="w-full sm:w-auto px-6 py-3 rounded-lg font-bold text-white bg-indigo-600 hover:bg-indigo-700 transition duration-200">
                 Explore Live Chat
-              </button>
+              </a>
             </div>
           </div>
           <div className="flex justify-center">
